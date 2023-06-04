@@ -9,12 +9,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
 
-      - name: setup-node
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 19
-          cache: npm
-          cache-dependency-path: ./next-typesctipt/package-lock.json
-
-      - name: npm-install
-        run: npm i
+          node-version: '19'
