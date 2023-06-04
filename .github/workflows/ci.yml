@@ -14,6 +14,7 @@ jobs:
         with:
           node-version: 19
           cache: npm
+          cache-dependency-path: ./next-typesctipt/package-lock.json
 
       - name: npm-install
         run: npm i
