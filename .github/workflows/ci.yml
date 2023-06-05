@@ -14,14 +14,13 @@ jobs:
         with:
           node-version: '19'
 
+      - run: node -v
+
       - name: npm install
         run: npm install
-
-      - run: node -v
-      - run: yarn -v
 
       - name: jest start
         run:  npm test
 
       - name: build
-        run:  npm test
+        run:  npm build
