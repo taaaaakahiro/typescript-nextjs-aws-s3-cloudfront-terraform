@@ -14,10 +14,14 @@ jobs:
         with:
           node-version: '19'
 
-      - name: npm update
-        run: npm update
+      - name: npm install
+        run: npm install
 
-      - run: cd ./next-typescript
+      - run: node -v
+      - run: yarn -v
 
       - name: jest start
+        run:  npm test
+
+      - name: build
         run:  npm test
