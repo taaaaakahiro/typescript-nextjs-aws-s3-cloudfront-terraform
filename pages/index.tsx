@@ -70,4 +70,7 @@ export default function Home() {
   )
 }
 
-export const getServerSideProps = async () => {};
+export async function getStaticProps() {
+  let props = {};
+  return {props};
+}
